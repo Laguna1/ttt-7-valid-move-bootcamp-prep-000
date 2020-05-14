@@ -1,11 +1,14 @@
 # code your #valid_move? method here
 
+# def position_taken?(board, index)
+#   if board[index] == " " || board[index] == "" || board[index] == nil # safety measures
+#       taken = false
+#     elsif board[index] == "X" || board[index] == "O"
+#       taken = true
+#   end
+# end
 def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil # safety measures
-      taken = false
-    elsif board[index] == "X" || board[index] == "O"
-      taken = true
-  end
+  board[index] != " "
 end
 
 def valid_move?
